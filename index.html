@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT. Gumilang Maju Selaras | Jasa Konstruksi & Pengadaan</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        /* Dasar & Tipografi */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { line-height: 1.6; color: #333; }
+        
+        /* Warna Perusahaan */
+        :root {
+            --primary: #004080; /* Biru Profesional */
+            --secondary: #f4b400; /* Kuning Konstruksi */
+            --light: #f4f7f6;
+            --dark: #1a1a1a;
+        }
+
+        /* Navigasi */
+        nav { background: var(--primary); padding: 1rem 5%; position: fixed; width: 100%; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: bold; font-size: 1.5rem; }
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { color: white; text-decoration: none; font-size: 0.9rem; }
+
+        /* Hero Section */
+        .hero { 
+            height: 80vh; 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); 
+            background-size: cover; background-position: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            color: white; text-align: center; padding: 0 20px;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; max-width: 700px; }
+
+        /* Section Global */
+        section { padding: 80px 10%; text-align: center; }
+        h2 { margin-bottom: 40px; color: var(--primary); font-size: 2rem; position: relative; }
+        h2::after { content: ''; width: 50px; height: 3px; background: var(--secondary); position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); }
+
+        /* Layanan */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .service-card { padding: 30px; background: var(--light); border-radius: 8px; transition: 0.3s; }
+        .service-card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .service-card i { font-size: 3rem; color: var(--primary); margin-bottom: 15px; }
+
+        /* Tentang */
+        .about { background: #fff; line-height: 1.8; text-align: justify; }
+
+        /* Kontak */
+        .contact { background: var(--dark); color: white; }
+        .contact a { color: var(--secondary); text-decoration: none; }
+
+        /* Footer */
+        footer { background: #111; color: #777; padding: 20px; text-align: center; font-size: 0.8rem; }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            nav ul { display: none; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">PT. GMS</div>
+        <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#services">Layanan</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>PT. GUMILANG MAJU SELARAS</h1>
+        <p>Membangun Masa Depan dengan Integritas dan Kualitas Terbaik dalam Jasa Konstruksi & Pengadaan Barang.</p>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Tentang Kami</h2>
+        <p>PT. Gumilang Maju Selaras adalah perusahaan yang berdedikasi dalam menyediakan solusi terintegrasi di bidang jasa konstruksi dan pengadaan barang. Dengan pengalaman dan komitmen yang kuat, kami melayani proyek-proyek infrastruktur, gedung, hingga penyediaan alat pendukung industri dengan standar profesionalisme tinggi.</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Layanan Kami</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-hard-hat"></i>
+                <h3>Jasa Konstruksi</h3>
+                <p>Pembangunan infrastruktur, gedung kantor, renovasi, dan manajemen proyek sipil secara menyeluruh.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-truck-loading"></i>
+                <h3>Pengadaan Barang</h3>
+                <p>Distribusi dan penyediaan material konstruksi, alat berat, serta kebutuhan teknis industri lainnya.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tools"></i>
+                <h3>Konsultasi Teknis</h3>
+                <p>Layanan konsultasi perencanaan dan estimasi anggaran untuk memastikan efisiensi proyek Anda.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Hubungi Kami</h2>
+        <p>Siap bekerja sama dengan kami? Hubungi tim profesional kami.</p>
+        <br>
+        <p><i class="fas fa-envelope"></i> info@gumilangmajuselaras20@gmail.com</p>
+        <p><i class="fas fa-phone"></i> +62 822 9597 7519</p>
+        <p><i class="fas fa-map-marker-alt"></i> Jl. Sanggar Kencana Utama No. 28 Bandung - 40286, Indonesia</p>
+        <br>
+        <a href="https://wa.me/628123456789" style="background: #25d366; color: white; padding: 10px 20px; border-radius: 5px; display: inline-block;">
+            <i class="fab fa-whatsapp"></i> Chat via WhatsApp
+        </a>
+    </section>
+
+    <footer>
+        &copy; 2024 PT. Gumilang Maju Selaras. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
